@@ -1,0 +1,26 @@
+{
+  "name": "js-exercises",
+  "version": "1.0.0",
+  "description": "Some JS exercises",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "node",
+    "js",
+    "es2015",
+    "jest"
+  ],
+  "author": "Juan Manuel Mougan",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^24.9.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  }
+}
