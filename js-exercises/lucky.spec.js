@@ -54,3 +54,27 @@ function getLuckyFloorNumber(n) {
   }
   return luckyFloors[luckyFloors.length - 1];
 }
+
+describe('Lucky numbers function', () => {
+  test('it should create lucky number for a number below all unluckies', () => {
+    // GIVEN
+    let input = 3;
+    let output = 3;
+    // WHEN getLuckyFloorNumber THEN return lucky number for floor
+    expect(getLuckyFloorNumber(input)).toEqual(output);
+  });
+  test('it should create lucky number for 4', () => {
+    // GIVEN
+    let input = 4;
+    let output = 5;
+    // WHEN getLuckyFloorNumber THEN return lucky number for floor
+    expect(getLuckyFloorNumber(input)).toEqual(output);
+  });
+  test('it should create lucky number for 12', () => {
+    // GIVEN
+    let input = 12;
+    let output = 15;
+    // WHEN getLuckyFloorNumber THEN return lucky number for floor
+    expect(getLuckyFloorNumber(input)).toEqual(output);
+  });
+});
